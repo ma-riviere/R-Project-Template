@@ -10,8 +10,7 @@ project_pkgs <- c(
   
   ### Visualizations
   "ggplot2",
-  "see",
-  "lisa",
+  # "lisa",
   
   ### Tables
   # "gt"
