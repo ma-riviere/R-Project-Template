@@ -2,14 +2,6 @@ project_pkgs <- c(
   ### Pre-requisites
   
 
-  ### Data wrangling
-  "tibble",
-  "purrr",
-  "dplyr",
-  "tidyr",
-  "stringr",
-  "readr",
-
   ### Model fitting
   
   
@@ -23,4 +15,12 @@ project_pkgs <- c(
   
   ### Tables
   # "gt"
+  
+  ### Data wrangling
+  "readr",
+  "tibble",
+  "stringr",
+  "purrr",
+  "tidyr",
+  "dplyr"
 )
