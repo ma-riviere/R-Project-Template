@@ -1,5 +1,5 @@
 ```{r include = F, echo = F, message = F, warning = F, cache = F}
-source("src/common/init.R", echo = F)
+source("../src/common/init.R", echo = F)
 
 init_packages("packages.R", update = T)
 
