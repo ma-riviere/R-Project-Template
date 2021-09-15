@@ -1,0 +1,2 @@
+default:
+  data: !expr here::here("data", "data.csv")
