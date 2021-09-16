@@ -1,7 +1,7 @@
 ```{r include = F, echo = F, message = F, warning = F, cache = F}
-source("../src/common/init.R", echo = F)
+source("../src/init.R", echo = F)
 
-init_packages("packages.R", update = T)
+init_project_packages(update = T)
 
-source(here("src", "data.R"), echo = F)
+data <- config$data
 ```

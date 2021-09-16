@@ -2,14 +2,16 @@
 #### Global project config ####
 #=============================#
 
-if(!"renv" %in% utils::installed.packages()) install.packages("renv")
-if(!"here" %in% utils::installed.packages()) install.packages("here")
+cat("\n>> [INIT] Starting project setup ... <<\n")
+
+if(!"renv" %in% utils::installed.packages()) {install.packages("renv"); library(renv)}
+if(!"here" %in% utils::installed.packages()) {install.packages("here"); library(here)}
 
 if(is.null(renv::project())) renv::init(project = here::here(), bare = TRUE)
 
-# TODO: usethis::use_blank_slate(scope = "project") <- only once ? no prompt ? make function ?
+# TODO: usethis::use_blank_slate(scope = "project") <- only once ? no prompt ?
 
-shell.exec(here::here("update_commons.bat"))
+if(length(list.files(here::here("src", "common"))) == 0) shell.exec(here::here("update_commons.bat"))
 
 source(here::here("src", "common", "packman.R"), echo = F)
 init_base_packages()

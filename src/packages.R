@@ -21,5 +21,16 @@ project_pkgs <- c(
   "stringr",
   "purrr",
   "tidyr",
-  "dplyr"
+  "dplyr",
+  
+  ### Misc
+  "glue", 
+  "styler", 
+  "miniUI", 
+  "tools",
+  "knitr", 
+  "rmarkdown",
+  "magrittr",
+  "gtools",
+  "rlang"
 )
