@@ -10,7 +10,7 @@ if(!"here" %in% utils::installed.packages()) {install.packages("here"); library(
 if(is.null(renv::project())) {
     renv::init(project = here::here(), bare = TRUE, restart = FALSE)
     file.create(here::here("config.yml"))
-    cat('default:\n  data: !expr here::here("data", "my_data.csv")', file = here::here("config.yml"))
+    cat('default:\r  data: !expr here::here("data", "my_data.csv")\r', file = here::here("config.yml"))
 }
 
 # TODO: usethis::use_blank_slate(scope = "project") <- only once ? no prompt ?
