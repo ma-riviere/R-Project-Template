@@ -14,7 +14,7 @@ if(is.null(renv::project())) {
 
 # TODO: usethis::use_blank_slate(scope = "project") <- only once ? no prompt ?
 
-if(length(list.files(here::here("src", "common"))) == 0) shell.exec(here::here("update_commons.bat"))
+if(length(list.files(here::here("src", "common"))) == 0) system(here::here("update_commons.bat"), intern = TRUE)
 
 source(here::here("src", "common", "packman.R"), echo = F)
 init_base_packages()
