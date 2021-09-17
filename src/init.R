@@ -7,7 +7,10 @@ cat("\n>> [INIT] Starting project setup ... <<\n")
 if(!"renv" %in% utils::installed.packages()) {install.packages("renv"); library(renv)}
 if(!"here" %in% utils::installed.packages()) {install.packages("here"); library(here)}
 
-if(is.null(renv::project())) renv::init(project = here::here(), bare = TRUE)
+if(is.null(renv::project())) {
+    renv::init(project = here::here(), bare = TRUE)
+    file.create(here::here("secret.yml"))
+}
 
 # TODO: usethis::use_blank_slate(scope = "project") <- only once ? no prompt ?
 
