@@ -1,17 +1,12 @@
 project_pkgs <- c(
   ### Pre-requisites
   
-
   ### Model fitting
-  
   
   ### Model analysis
   
-  
   ### Visualizations
-  "ggplot2",
-  # "lisa",
-  
+
   ### Tables
   # "gt"
   
