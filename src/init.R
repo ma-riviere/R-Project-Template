@@ -8,8 +8,8 @@ if(!"renv" %in% utils::installed.packages()) {install.packages("renv"); library(
 if(!"here" %in% utils::installed.packages()) {install.packages("here"); library(here)}
 
 if(is.null(renv::project())) {
-    renv::init(project = here::here(), bare = TRUE)
-    file.create(here::here("secret.yml"))
+    renv::init(project = here::here(), bare = TRUE, restart = FALSE)
+    file.create(here::here("config.yml"))
 }
 
 # TODO: usethis::use_blank_slate(scope = "project") <- only once ? no prompt ?

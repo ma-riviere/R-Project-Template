@@ -1,7 +1,4 @@
 ```{r include = F, echo = F, message = F, warning = F, cache = F}
 source("../src/init.R", echo = F)
-
 init_project_packages(update = T)
-
-data <- config$data
 ```
