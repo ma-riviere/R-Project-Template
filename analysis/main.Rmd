@@ -1,4 +1,7 @@
 ```{r include = F, echo = F, message = F, warning = F, cache = F}
-source("../src/init.R", echo = F)
-init_project_packages(update = T)
+if(!"here" %in% utils::installed.packages()) {install.packages("here"); library(here)}
+
+source(here::here("src", "common", "setup_global.R"), echo = F)
+
+setup_project(update = F)
 ```
