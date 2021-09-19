@@ -14,15 +14,13 @@ if(is.null(renv::project())) {
   }
   if(!file.exists(here::here("secret.yml"))) {
     file.create(here::here("secret.yml"))
-    cat('default:\r', file = here::here("secret.yml"))
+    cat('default:\r  api_key: ""\r', file = here::here("secret.yml"))
   }
 }
 
 # TODO: usethis::use_blank_slate(scope = "project") <- only once ? no prompt ?
 
 if(length(list.files(here::here("src", "common"))) == 0) system(here::here("update_commons.bat"), intern = TRUE)
-
-source(here::here("src", "common", "setup_global.R"), echo = F)
 
 source(here::here("src", "common", "packman.R"), echo = F)
 init_base_packages()
