@@ -34,7 +34,7 @@ init_base_packages()
 source(here::here("src", "common", "utils.R"), echo = F)
 
 source(here::here("src", "common", "config_global.R"), echo = F)
-load_global_config()
+global_config <- load_global_config()
 
 source(here::here("src", "common", "theme.R"), echo = F)
 
