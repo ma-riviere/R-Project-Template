@@ -20,7 +20,10 @@ if(!file.exists(here::here("secret.yml"))) {
 }
 
 update_submodules <- function() {
-  if(Sys.info()[["sysname"]] == "Linux") system(here::here("update_commons.sh"), intern = TRUE)
+  if(Sys.info()[["sysname"]] == "Linux") {
+    system("chmod +x update_commons.sh", intern = TRUE)
+    system(here::here("update_commons.sh"), intern = TRUE)
+  }
   else if(Sys.info()[["sysname"]] == "Windows") system(here::here("update_commons.bat"), intern = TRUE)
 }
 
