@@ -56,8 +56,6 @@ setup_project <- function(update = FALSE) {
   source(here::here("src", "data.R"), echo = F)
   
   source(here::here("src", "viz.R"), echo = F)
-
-  source(here::here("src", "stats.R"), echo = F)
   
   cat(main("\n>> [SETUP] Project Setup DONE ! <<\n"))
 }

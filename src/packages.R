@@ -6,9 +6,6 @@ project_pkgs <- c(
   ### Model analysis
   
   ### Visualizations
-
-  ### Tables
-  # "gt"
   
   ### Data wrangling
   "readr",
@@ -17,6 +14,9 @@ project_pkgs <- c(
   "purrr",
   "tidyr",
   "dplyr",
+
+  ### Reporting
+  # "gt"
   
   ### Misc
   "glue", 
