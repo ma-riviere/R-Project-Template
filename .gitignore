@@ -36,3 +36,7 @@ vignettes/*.pdf
 rsconnect/
 
 secret.yml
+
+reports/slides/libs/*
+reports/slides/*_cache
+reports/slides/*_files
