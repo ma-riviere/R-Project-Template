@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 git submodule update --init --recursive
 git submodule foreach git checkout .
