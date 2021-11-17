@@ -2,7 +2,7 @@
 #### Project Config ####
 #======================#
 
-cat(main("\n[CONFIG] Loading Project Configs ...\n"))
+log.title("[CONFIG] Loading Project Configs ...")
 
 config <- config::get()
 secret <- config::get(file = "secret.yml")
