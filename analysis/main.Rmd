@@ -3,5 +3,5 @@ if(!"here" %in% utils::installed.packages()) {install.packages("here"); library(
 
 source(here::here("src", "common", "init.R"), echo = F)
 
-setup_project(update = F)
+setup_project(install = F, update = F, clean = F)
 ```
