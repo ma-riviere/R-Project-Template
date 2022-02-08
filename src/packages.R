@@ -30,7 +30,7 @@ project_pkgs <- c(
   "glue", 
   "styler", 
   "miniUI", 
-  "tools",
+  # "tools",
   "knitr", 
   "rmarkdown",
   "magrittr",
