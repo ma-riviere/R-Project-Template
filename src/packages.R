@@ -31,8 +31,6 @@ project_pkgs <- c(
   "styler", 
   "miniUI", 
   # "tools",
-  "knitr", 
-  "rmarkdown",
   "gtools",
   "magrittr"
 )
