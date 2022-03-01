@@ -14,6 +14,8 @@ project_pkgs <- c(
   ### Model analysis
   
   ### Visualizations
+  "ggplot2",
+  "ggtext",
   
   ### Data wrangling
   "readr",
