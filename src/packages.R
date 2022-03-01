@@ -16,6 +16,7 @@ project_pkgs <- c(
   ### Visualizations
   "ggplot2",
   "ggtext",
+  "patchwork",
   
   ### Data wrangling
   "readr",
