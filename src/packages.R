@@ -1,3 +1,7 @@
+#========================#
+#### Project packages ####
+#========================#
+
 project_repos <- c(
   # EasyStats = "https://easystats.r-universe.dev",
   # Stan = "https://mc-stan.org/r-packages/",
@@ -9,6 +13,14 @@ base_pkgs <- c("renv", "here", "config", "rlang", "fs", "knitr", "rmarkdown", "c
 project_pkgs <- c(
   ### Pre-requisites
   
+  ### Data wrangling
+  "readr",
+  "tibble",
+  "stringr",
+  "purrr",
+  "tidyr",
+  "dplyr",
+  
   ### Model fitting
   
   ### Model analysis
@@ -17,14 +29,6 @@ project_pkgs <- c(
   "ggplot2",
   "ggtext",
   "patchwork",
-  
-  ### Data wrangling
-  "readr",
-  "tibble",
-  "stringr",
-  "purrr",
-  "tidyr",
-  "dplyr",
 
   ### Reporting
   # "gt"
