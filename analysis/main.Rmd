@@ -1,4 +1,4 @@
-```{r include = F, echo = F, message = F, warning = F, cache = F}
+```{r include = F, echo = F}
 if(!"here" %in% utils::installed.packages()) {install.packages("here"); library(here)}
 
 source(here::here("src", "common", "init.R"), echo = F)
