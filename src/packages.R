@@ -31,13 +31,12 @@ project_pkgs <- c(
   "patchwork",
 
   ### Reporting
-  # "gt"
+  "gt",
   
   ### Misc
   "glue", 
   "styler", 
   "miniUI", 
-  # "tools",
   "gtools",
   "magrittr"
 )
