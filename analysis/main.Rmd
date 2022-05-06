@@ -1,7 +1,5 @@
-```{r include = F, echo = F}
-if(!"here" %in% utils::installed.packages()) {install.packages("here"); library(here)}
-
-source(here::here("src", "common", "init.R"), echo = F)
+```{r}
+source(here::here("src", "common", "setup.R"), echo = F)
 
 setup_project(install = F, update = F, clean = F)
 ```
