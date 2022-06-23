@@ -1,6 +1,6 @@
-#====================#
-#### Project Init ####
-#====================#
+####╔═════      ═════╗####
+####💠 Project Init 💠####
+####╚═════      ═════╝####
 
 is_installed <- \(pkg) suppressMessages({require(pkg, quietly = TRUE, warn.conflicts = FALSE, character.only = TRUE)})
 
