@@ -32,6 +32,7 @@ project_pkgs <- c(
 
   ### Reporting
   "gt",
+  "gtExtras",
   
   ### Misc
   "styler", 
