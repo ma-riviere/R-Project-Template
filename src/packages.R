@@ -8,7 +8,7 @@ project_repos <- c(
   CRAN = "https://cloud.r-project.org/"
 )
 
-base_pkgs <- c("renv", "here", "config", "rlang", "fs", "knitr", "rmarkdown", "crayon", "usethis", "glue")
+base_pkgs <- c("renv", "here", "config", "rlang", "fs", "knitr", "rmarkdown", "crayon", "usethis", "glue", "magrittr", "todor", "pipebind")
 
 project_pkgs <- c(
   ### Pre-requisites
@@ -30,13 +30,12 @@ project_pkgs <- c(
   "ggtext",
   "patchwork",
 
-  ### Reporting
+  ### Publishing
   "gt",
   "gtExtras",
   
   ### Misc
   "styler", 
   "miniUI", 
-  "gtools",
-  "magrittr"
+  "gtools"
 )
